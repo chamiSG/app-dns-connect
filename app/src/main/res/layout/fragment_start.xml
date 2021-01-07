@@ -39,6 +39,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/pill"
         android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
         android:text="Activate"
-        android:textColor="?android:attr/textColorPrimaryInverse"/>
+        android:textColor="?android:attr/textColorPrimaryInverse" />
 </LinearLayout>

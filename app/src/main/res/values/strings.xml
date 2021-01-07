@@ -76,8 +76,8 @@
     <string name="expand_bar_toggle_close">Close details panel</string>
     <string name="expand_bar_expanded">Opened</string>
     <string name="expand_bar_closed">Closed</string>
-    <string name="action_stop">Stop</string>
-    <string name="action_start">Start</string>
+    <string name="action_stop">Disconnect</string>
+    <string name="action_start">Connect</string>
     <string name="automatic_refresh">Refresh daily</string>
     <string name="automatic_refresh_description">Daily updates occur when charging, idle, and on an unmetered network.</string>
     <string name="watchdog">Watch connection</string>

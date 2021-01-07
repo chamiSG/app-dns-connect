@@ -18,6 +18,16 @@
         "title": "CloudFlare DNS (2)",
         "location": "1.0.0.1",
         "state": 1
+      },
+      {
+        "title": "Google DNS (1)",
+        "location": "8.8.8.8",
+        "state": 0
+      },
+      {
+        "title": "Google DNS (2)",
+        "location": "8.8.4.4",
+        "state": 0
       }
     ]
   },

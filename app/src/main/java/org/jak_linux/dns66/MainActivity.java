@@ -149,29 +149,10 @@ public class MainActivity extends AppCompatActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
-            case R.id.action_refresh:
-                refresh();
-                break;
             case R.id.action_load_defaults:
                 config = FileHelper.loadDefaultSettings(this);
                 FileHelper.writeSettings(this, MainActivity.config);
                 recreate();
-                break;
-            case R.id.action_import:
-                Intent intent = new Intent()
-                        .setType("*/*")
-                        .setAction(Intent.ACTION_OPEN_DOCUMENT)
-                        .addCategory(Intent.CATEGORY_OPENABLE);
-
-                startActivityForResult(intent, REQUEST_FILE_OPEN);
-                break;
-            case R.id.action_export:
-                Intent exportIntent = new Intent(Intent.ACTION_CREATE_DOCUMENT)
-                        .addCategory(Intent.CATEGORY_OPENABLE)
-                        .setType("*/*")
-                        .putExtra(Intent.EXTRA_TITLE, "dns66.json");
-
-                startActivityForResult(exportIntent, REQUEST_FILE_STORE);
                 break;
             case R.id.setting_night_mode:
                 item.setChecked(!item.isChecked());
@@ -209,9 +190,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_about:
                 Intent infoIntent = new Intent(this, InfoActivity.class);
                 startActivity(infoIntent);
-                break;
-            case R.id.action_logcat:
-                sendLogcat();
                 break;
         }
 

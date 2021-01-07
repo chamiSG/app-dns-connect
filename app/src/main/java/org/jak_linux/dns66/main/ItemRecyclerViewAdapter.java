@@ -81,10 +81,12 @@ public class ItemRecyclerViewAdapter extends RecyclerView.Adapter<ItemRecyclerVi
                     case Configuration.Item.STATE_IGNORE:
                     case Configuration.Item.STATE_DENY:
                         iconView.setImageDrawable(context.getDrawable(R.drawable.ic_check_box_outline_blank_black_24dp));
+                        iconView.setColorFilter(0x1a73e8);
                         iconView.setContentDescription(context.getString(R.string.do_not_use_dns_server));
                         break;
                     case Configuration.Item.STATE_ALLOW:
                         iconView.setImageDrawable(context.getDrawable(R.drawable.ic_check_box_black_24dp));
+                        iconView.setColorFilter(0x1a73e8);
                         iconView.setContentDescription(context.getString(R.string.use_dns_server));
                         break;
                 }

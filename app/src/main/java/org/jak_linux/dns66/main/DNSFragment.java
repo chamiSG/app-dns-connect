@@ -53,16 +53,6 @@ public class DNSFragment extends Fragment implements FloatingActionButtonFragmen
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new ItemTouchHelperCallback(mAdapter));
         itemTouchHelper.attachToRecyclerView(mRecyclerView);
 
-        Switch dnsEnabled = (Switch) rootView.findViewById(R.id.dns_enabled);
-        dnsEnabled.setChecked(MainActivity.config.dnsServers.enabled);
-        dnsEnabled.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                MainActivity.config.dnsServers.enabled = isChecked;
-                FileHelper.writeSettings(getContext(), MainActivity.config);
-            }
-        });
-        ExtraBar.setup(rootView.findViewById(R.id.extra_bar), "dns");
         return rootView;
     }
 

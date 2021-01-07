@@ -119,6 +119,7 @@ public class StartFragment extends Fragment {
                 break;
             case AdVpnService.VPN_STATUS_RUNNING:
                 stateImage.setImageDrawable(context.getDrawable(R.drawable.ic_verified_user_black_24dp));
+                stateImage.setColorFilter(0x1a73e8);
                 startButton.setText(R.string.action_stop);
                 break;
             case AdVpnService.VPN_STATUS_RECONNECTING_NETWORK_ERROR:
@@ -137,6 +138,7 @@ public class StartFragment extends Fragment {
         } else {
             onActivityResult(REQUEST_START_VPN, RESULT_OK, null);
         }
+
     }
 
     @Override
