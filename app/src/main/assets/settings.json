@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "minorVersion": 2,
+  "autoStart": true,
+  "showNotification": true,
+  "nightMode": false,
+  "watchDog": false,
+  "ipV6Support": true,
+  "dnsServers": {
+    "enabled": false,
+    "items": [
+      {
+        "title": "CloudFlare DNS (1)",
+        "location": "1.1.1.1",
+        "state": 1
+      },
+      {
+        "title": "CloudFlare DNS (2)",
+        "location": "1.0.0.1",
+        "state": 1
+      }
+    ]
+  },
+  "hosts": {
+    "enabled": true,
+    "automaticRefresh": false,
+    "items": [
+      {
+        "title": "StevenBlack's hosts file (includes all others)",
+        "location": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+        "state": 0
+      },
+      {
+        "title": "DuckDuckGo Tracker List (provided by Blokada)",
+        "location": "https://blokada.org/blocklists/ddgtrackerradar/standard/hosts.txt",
+        "state": 0
+      },
+      {
+        "title": "Adaway hosts file",
+        "location": "https://adaway.org/hosts.txt",
+        "state": 2
+      },
+      {
+        "title": "Dan Pollock's hosts file",
+        "location": "https://someonewhocares.org/hosts/hosts",
+        "state": 2
+      },
+      {
+        "title": "Long-lived malware domains",
+        "location": "https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt",
+        "state": 2
+      },
+      {
+        "title": "Malware Domain List",
+        "location": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "state": 2
+      },
+      {
+        "title": "Malware domains.com",
+        "location": "https://mirror.cedia.org.ec/malwaredomains/justdomains",
+        "state": 2
+      },
+      {
+        "title": "Peter Lowe’s Ad server list",
+        "location": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+        "state": 2
+      }
+    ]
+  },
+  "whitelist": {
+    "showSystemApps": false,
+    "defaultMode": 2,
+    "items": [
+      "com.android.vending"
+    ],
+    "itemsBlacklist": [
+
+    ]
+  }
+}
