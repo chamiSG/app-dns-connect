@@ -19,10 +19,9 @@ You can also download apk files in GitHub's download section. Currently, these a
 
 XDA: Discussions and preview builds
 -----------------------------------
-There is a thread at XDA, where DNS66 can be discussed and I occasionaly post
+There is a thread at XDA, where DNS can be discussed and I occasionaly post
 preview builts of the git repository:
 
-https://forum.xda-developers.com/android/apps-games/app-dns66-source-host-ad-blocker-root-t3487497
 
 Using it
 ---------

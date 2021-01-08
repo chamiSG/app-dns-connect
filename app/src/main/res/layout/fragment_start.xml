@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              tools:context="org.jak_linux.dns66.main.StartFragment">
+              tools:context="org.conn.dns.main.StartFragment">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/dns_view"
@@ -20,7 +20,7 @@
 
     </com.google.android.material.textview.MaterialTextView>
 
-    <org.jak_linux.dns66.SquareImageView
+    <org.conn.dns.SquareImageView
         android:id="@+id/state_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
